@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>献立調整アプリ　管理者画面</title>
+  <link rel="stylesheet" href="kondate-admin20.css">
+</head>
+<body>
+    <header>
+        <div class="headerInner">
+            <h1 id="hyou-dai" class="hyoudai">管理者画面</h1>
+            <a class="mainScreen" href="js-kondate-main20.html">献立調整アプリに戻る</a>
+    </header>
+    <h3 id = "toriatsukai">１～７の手順に従って設定してください。初期設定ボタンを押すことで初期設定をテーブルに反映することができます。</h3>
+  <p id = "zairyou-comment">１．材料テーブル<br>　　冷蔵庫の材料リスト(6種類)を作成してください</p>
+   
+    <table id = "adminZairyou-table" class = "zairyou-list" border = '1'>
+        <form>
+        <tr class = 'yokojiku'>
+            <th>番号</th>
+            <th>材料</th>
+        </tr>
+        
+        <tr>            
+            <td class = 'tatejiku'>1</td>
+            <td><input type="text" name ="syokuzai-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>2</td>
+            <td><input type="text" name ="syokuzai-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>3</td>
+            <td><input type="text" name ="syokuzai-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>4</td>
+            <td><input type="text" name ="syokuzai-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>5</td>
+            <td><input type="text" name ="syokuzai-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>6</td>
+            <td><input type="text" name ="syokuzai-settei" size="20" maxlength="10" /></td>
+        </tr>
+    </form>
+    </table>
+
+    <p id = "menuList-comment">２．献立テーブル<br>　　あなたのレバートリーから6種類入力してください</p>
+   
+    <table id = "adminMenu-table" class = "menu-list" border = '1'>
+        <form>
+        <tr class = 'yokojiku'>
+            <th>番号</th>
+            <th>献立</th>
+        </tr>
+        
+        <tr>            
+            <td class = 'tatejiku'>1</td>
+            <td><input type="text" name ="kondate-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>2</td>
+            <td><input type="text" name ="kondate-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>3</td>
+            <td><input type="text" name ="kondate-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>4</td>
+            <td><input type="text" name ="kondate-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>5</td>
+            <td><input type="text" name ="kondate-settei" size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>6</td>
+            <td><input type="text" name ="kondate-settei" size="20" maxlength="10" /></td>
+        </tr>
+    </form>
+    </table>
+    <p id = "nameTable-comment">３．名前テーブル<br>　　希望を取る対象者の名前を記入して下さい</p>
+    <p><input type="button" value= "PUSH" id = reflectSettings1 onclick="reflectOtherTable();"></p> 
+    <p id = buttonComment1>４．下の 「PUSH」 ボタン を押して１,２のテーブルのデータを「５．献立と必要な材料テーブル」 に反映してください</p>
+    <p id = "menuTable-comment">５．献立と必要な材料テーブル<br>　　各献立について必要な材料にチェックを入れてください</p>
+
+    <table id = "adminZairyo-menu" border="1" width="800">
+        <form>
+    
+            <thead>
+                <tr bgcolor="#e0e0e0">
+                    <th colspan="1" scope="colgroup" class = 'yokojiku'></th>
+                    <th colspan="6" scope="colgroup" class = 'yokojiku'>材料</th>
+                </tr>
+                <tr bgcolor="#f0f0f0">
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">献立</th>
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">たまご</th>
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">ひき肉</th>
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">たまねぎ</th>
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">キャベツ</th>
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">肉</th>
+                    <th scope="col" name="menuTable-column" class = 'yokojiku' width="40">魚</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                
+                <tr>
+                    <td name="menuTable-row" class = 'tatejiku'>カレー</td>
+                    <td name="a"><input type="checkbox" name ="menuNo1" size="40" maxlength="20" /></td>
+                    <td name="a"><input type="checkbox" name ="menuNo1" size="40" maxlength="20" /></td>
+                    <td name="a"><input type="checkbox" name ="menuNo1" size="40" maxlength="20" /></td>
+                    <td name="a"><input type="checkbox" name ="menuNo1" size="40" maxlength="20" /></td>
+                    <td name="a"><input type="checkbox" name ="menuNo1" size="40" maxlength="20" /></td>
+                    <td name="a"><input type="checkbox" name ="menuNo1" size="40" maxlength="20" /></td>
+                </tr>
+    
+                <tr>
+                    <td name="menuTable-row" class = 'tatejiku'>ハンバーグ</td>
+                    <td name="b"><input type="checkbox" name ="menuNo2" size="40" maxlength="20" /></td>
+                    <td name="b"><input type="checkbox" name ="menuNo2" size="40" maxlength="20" /></td>
+                    <td name="b"><input type="checkbox" name ="menuNo2" size="40" maxlength="20" /></td>
+                    <td name="b"><input type="checkbox" name ="menuNo2" size="40" maxlength="20" /></td>
+                    <td name="b"><input type="checkbox" name ="menuNo2" size="40" maxlength="20" /></td>
+                    <td name="b"><input type="checkbox" name ="menuNo2" size="40" maxlength="20" /></td>
+                </tr>
+    
+                <tr>
+                    <td name="menuTable-row" class = 'tatejiku'>すき焼き</td>
+                    <td name="c"><input type="checkbox" name ="menuNo3" size="40" maxlength="20" /></td>
+                    <td name="c"><input type="checkbox" name ="menuNo3" size="40" maxlength="20" /></td>
+                    <td name="c"><input type="checkbox" name ="menuNo3" size="40" maxlength="20" /></td>
+                    <td name="c"><input type="checkbox" name ="menuNo3" size="40" maxlength="20" /></td>
+                    <td name="c"><input type="checkbox" name ="menuNo3" size="40" maxlength="20" /></td>
+                    <td name="c"><input type="checkbox" name ="menuNo3" size="40" maxlength="20" /></td>
+                </tr>
+                <tr>
+                    <td name="menuTable-row" class = 'tatejiku'>オムライス</td>
+                    <td name="d"><input type="checkbox" name ="menuNo4" size="40" maxlength="20" /></td>
+                    <td name="d"><input type="checkbox" name ="menuNo4" size="40" maxlength="20" /></td>
+                    <td name="d"><input type="checkbox" name ="menuNo4" size="40" maxlength="20" /></td>
+                    <td name="d"><input type="checkbox" name ="menuNo4" size="40" maxlength="20" /></td>
+                    <td name="d"><input type="checkbox" name ="menuNo4" size="40" maxlength="20" /></td>
+                    <td name="d"><input type="checkbox" name ="menuNo4" size="40" maxlength="20" /></td>
+                </tr>
+                <tr>
+                    <td name="menuTable-row" class = 'tatejiku'>お好み焼き</td>
+                    <td name="e"><input type="checkbox" name ="menuNo5" size="40" maxlength="20" /></td>
+                    <td name="e"><input type="checkbox" name ="menuNo5" size="40" maxlength="20" /></td>
+                    <td name="e"><input type="checkbox" name ="menuNo5" size="40" maxlength="20" /></td>
+                    <td name="e"><input type="checkbox" name ="menuNo5" size="40" maxlength="20" /></td>
+                    <td name="e"><input type="checkbox" name ="menuNo5" size="40" maxlength="20" /></td>
+                    <td name="e"><input type="checkbox" name ="menuNo5" size="40" maxlength="20" /></td>
+                </tr>
+                <tr>
+                    <td name="menuTable-row" class = 'tatejiku'>魚のフライ</td>
+                    <td name="f"><input type="checkbox" name ="menuNo6" size="40" maxlength="20" /></td>
+                    <td name="f"><input type="checkbox" name ="menuNo6" size="40" maxlength="20" /></td>
+                    <td name="f"><input type="checkbox" name ="menuNo6" size="40" maxlength="20" /></td>
+                    <td name="f"><input type="checkbox" name ="menuNo6" size="40" maxlength="20" /></td>
+                    <td name="f"><input type="checkbox" name ="menuNo6" size="40" maxlength="20" /></td>
+                    <td name="f"><input type="checkbox" name ="menuNo6" size="40" maxlength="20" /></td>
+                </tr>
+            
+            </tbody>
+        </form>
+    
+    </table>
+
+    <table id = "namae" border="1">
+        <tr class = 'yokojiku'>
+            <th>番号</th>
+            <th>名前</th>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>1</td>
+            <td><input type="text" name = "namae-settei" size="20" maxlength="20" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>2</td>
+            <td><input type="text" name = "namae-settei" size="20" maxlength="20" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>3</td>
+            <td><input type="text" name = "namae-settei" size="20" maxlength="20" /></td>
+        </tr>
+        <tr>
+            <td class = 'tatejiku'>4</td>
+            <td><input type="text" name = "namae-settei" size="20" maxlength="20" /></td>
+        </tr>
+    </table>
+    <p id = buttonComment2>６．「データをメイン画面に反映する」ボタンを押してください</p>
+    <p id = finalAction>7．最後に本画面右上のリンクからメイン画面に戻ってください</p>
+
+
+
+    <p><input type="button" value="データをメイン画面に反映" class="reflectMainScr" id = "reflectMain" onclick="adminSettingGet();"/></p>
+    
+    <p><input type="button" value="初期設定を使う" class="useDefoultSetting" id = "useDefoult" onclick="defoultSettingGet();"/></p>
+
+    <script src="kondate-admin20.js"></script>
+</body>
+</html>

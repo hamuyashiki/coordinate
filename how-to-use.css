@@ -1,0 +1,8 @@
+/* [リンク] 献立調整画面に戻るリンクの表示 */
+.mainScreen {
+  display: inline-block;
+  position : absolute;
+    top : 35px;
+    left : 820pX;
+    width:160px;
+}

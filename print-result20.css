@@ -1,0 +1,13 @@
+/* 買い物メモなので　背景色はインクの無駄がなく見やすい　白　とする*/
+body {
+    background-color: white;          
+    }
+/* 調整結果の印刷設定*/
+#result-area {
+    position : absolute;
+    top : 100px;
+    left : 30px;  
+    padding: 5px 20px; 
+    font-size: 2.5em;
+    color: black;       
+}

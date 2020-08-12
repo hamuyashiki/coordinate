@@ -1,0 +1,142 @@
+/* 管理者画面の　背景色　と　文字色 の指定*/
+body {
+  background:linear-gradient(to right, #fce7a1, #fab433);
+  color:rgb(114, 19, 24);
+  }
+
+  header{
+    background: #eeeeee;
+    color:rgb(51, 26, 27);
+}
+.headerInner{
+  padding-left:320px;
+}
+
+/* [ボタン] 初期設定使用ボタンの表示 */
+#useDefoult {
+  position : absolute;
+    top : 35px;
+    left : 670px;    
+}
+/* [リンク] 献立調整画面に戻るリンクの表示 */
+.mainScreen {
+  display: inline-block;
+  position : absolute;
+    top : 35px;
+    left : 820pX;
+    width:160px;
+}
+
+/* [タイトル] 材料テーブルのタイトルの表示位置 */
+#zairyou-comment
+{
+  position : absolute;
+    top : 110px;
+    left : 0px;
+    font-size: 15px;
+}
+/* [タイトル] 献立テーブルのタイトルの表示位置 */
+#menuList-comment {
+  position : absolute;
+    top : 110px;
+    left : 440px;
+    font-size: 15px;
+}
+/* [タイトル] 名前テーブルのタイトルの表示位置 */
+#nameTable-comment{
+  position : absolute;
+    top : 110px;
+    left : 840px;
+    font-size: 15px;
+}
+
+/* [テーブル] 材料テーブルの表示位置 */
+#adminZairyou-table {
+  position : absolute;
+    top : 180px;
+    left : 20px;
+}
+/* [テーブル] 献立テーブルの表示位置 */
+.menu-list {
+  position : absolute;
+    top : 180px;
+    left : 460px;
+}
+/* [テーブル] 名前テーブルの表示位置 */
+#namae {
+  position : absolute;
+    top : 180px;
+    left : 860px;
+}
+
+/* [説明] 材料テーブル、献立テーブルへの反映ボタンの説明の表示位置 */
+#buttonComment1 {
+  position : absolute;
+    top : 400px;
+    left : 0px;
+    font-size: 15px;
+}
+/* [ボタン] 材料テーブル、献立テーブルの設定を 材料-献立テーブルへ反映するボタンの形、色、位置 */ 
+#reflectSettings1 {
+  position : absolute;
+    top : 450px;
+    left : 50px;
+  width: 150px;
+  padding: 10px 40px;
+  background-color: rgb(255, 170, 90);
+  font-size: 15px;
+  font-weight: bold;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+      border-radius: 7px;  
+}
+  /* 全ての表の見た目 */
+  .yokojiku {
+    background-color: rgb(248, 246, 130);
+  }
+  .tatejiku {
+    background-color: rgb(248, 246, 130);
+  }
+
+/* [タイトル] 材料-献立テーブルのタイトルの表示位置 */
+#menuTable-comment{
+  position : absolute;
+    top : 500px;
+    left : 0px;
+    font-size: 15px;
+}
+/* [テーブル] 材料-献立テーブルの表示位置 */
+#adminZairyo-menu {
+  position : absolute;
+    top : 570px;
+    left : 20px;
+}
+
+/* [説明] メイン画面への反映ボタンの説明の表示位置 */
+#buttonComment2 {
+  position : absolute;
+    top : 820px;
+    left : 0px;
+    font-size: 15px;
+}
+/* [ボタン] メイン画面に反映するボタンの表示 */
+#reflectMain {
+  position : absolute;
+    top : 865px;
+    left : 50px; 
+  width: 200px;
+  padding: 10px 10px;
+  background-color: rgb(255, 170, 90);
+  font-size: 12px;
+  font-weight: bold;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+      border-radius: 7px;             
+}
+/* 最後の説明 の表示 */
+#finalAction {
+  position : absolute;
+    top : 905px;
+    left : 0px;
+    font-size: 15px;
+}
