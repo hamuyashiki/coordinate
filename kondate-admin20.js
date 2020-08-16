@@ -24,7 +24,7 @@ function adminSettingGet() {
   };
   // 配列の要素(最後の1要素)を文字列に追加
   zairyouName = zairyouName + arrySyokuzaiSettei[arrySyokuzaiSettei.length - 1].value  
-  // js-kondate-main*.htmlで読み出せるようlocalStorageに保存する
+  // js-kondate-main20.htmlで読み出せるようlocalStorageに保存する
   localStorage.setItem('key1', zairyouName);
 
   // 献立テーブル読み出し
@@ -36,7 +36,7 @@ function adminSettingGet() {
   };
   // 配列の要素(最後の1要素)を文字列に追加
   menuName = menuName + arryMenuSettei[arryMenuSettei.length - 1].value  
-  // js-kondate-main*.htmlで読み出せるようlocalStorageに保存する
+  // js-kondate-main20.htmlで読み出せるようlocalStorageに保存する
   localStorage.setItem('key2', menuName);
 
   // 名前テーブル読み出し
@@ -48,7 +48,7 @@ function adminSettingGet() {
   };
   // 配列の要素(最後の1要素)を文字列に追加
   namae = namae + arryNamaeSettei[arryNamaeSettei.length - 1].value  
-  // js-kondate-main*.htmlで読み出せるようlocalStorageに保存する
+  // js-kondate-main20.htmlで読み出せるようlocalStorageに保存する
   localStorage.setItem('key3', namae);
 
   /**
@@ -348,8 +348,8 @@ function defoultSettingGet() {
   var initialMenuList = document.getElementsByName("kondate-settei")
   var initialNameList = document.getElementsByName("namae-settei")
 
-  let initialMenuTableColumn = document.getElementsByName("menuTable-column");
-  let initialMenuTableRow = document.getElementsByName("menuTable-row");
+  var initialMenuTableColumn = document.getElementsByName("menuTable-column");
+  var initialMenuTableRow = document.getElementsByName("menuTable-row");
   var initialMenuNo1 = document.getElementsByName("menuNo1");
   var initialMenuNo2 = document.getElementsByName("menuNo2");
   var initialMenuNo3 = document.getElementsByName("menuNo3");
@@ -370,7 +370,7 @@ function defoultSettingGet() {
   for (i = 1; i < initialMenuTableColumn.length; i++) {
     initialMenuTableColumn[i].innerText = zairyou[i - 1];
   }
-  for (i = 0; i < menuTableRow.length; i++) {
+  for (i = 0; i < initialMenuTableRow.length; i++) {
     initialMenuTableRow[i].innerText = kondate[i];
   }
   for (i = 0; i < initialMenuNo1.length; i++) {
