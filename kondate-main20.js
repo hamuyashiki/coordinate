@@ -12,6 +12,23 @@
  *              材料名、献立名、メンバー名（家族の名前）については別画面（管理者用画面)で変更可能であること
  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+ /* ==================================================
+  調整結果表示エリアの場所を決める
+  表示エリアの記載を一旦全て消去する関数を準備する  
+  memo:"メニューを決める"ボタンと　"もう一度やるボタン"　をクリックした時それぞれに必要なので　その外で定義する
+ ====================================================*/
+ const initialAlert = document.getElementById('initial-alert')
+ const resultDivided = document.getElementById('result-area');
+/**
+ * 指定した要素の子要素を全て削除する
+ * @param {HTMLElement} element HTMLの要素
+ */
+function removeAllChildren(element) {
+  while (element.firstChild) {
+    // 子どもの要素があるかぎり削除
+    element.removeChild(element.firstChild);
+  }
+}
 
 /* =========================================================
   メイン画面が開かれたとき　管理者画面で設定した内容を　メイン画面のテーブルに反映する
@@ -22,7 +39,16 @@ var adminSetting = new Array(9);
 
 for (let i = 0; i < keyName.length; i++) {
   // 1) 管理者画面の各テーブルの配列を文字列化した値を key1～9 で読み出す
-  var setteiYomidashi = localStorage.getItem(keyName[i]);
+  let setteiYomidashi = localStorage.getItem(keyName[i]);
+  console.log(setteiYomidashi);
+  if(setteiYomidashi === null){
+    removeAllChildren(initialAlert);
+  const indicateAlert = document.createElement('h2');
+  indicateAlert.innerText = '管理者画面を設定してから使用してください';
+  initialAlert.appendChild(indicateAlert);
+  }else{
+    console.log("設定済みだね");
+    removeAllChildren(initialAlert);}
   // 2) ","を含んだ各文字列を配列に直す
   adminSetting[i] = setteiYomidashi.split(",");
 }
@@ -49,22 +75,6 @@ for (i = 0; i < menuNameOverWrite.length; i++) { menuNameOverWrite[i].innerText 
 let kazokuNameOverWrite = document.getElementsByName("kazoku-name");
 for (i = 0; i < kazokuNameOverWrite.length; i++) { kazokuNameOverWrite[i].innerText = kazokuName[i] };
 
-/* ==================================================
-  調整結果表示エリアの場所を決める
-  表示エリアの記載を一旦全て消去する関数を準備する  
-  memo:"メニューを決める"ボタンと　"もう一度やるボタン"　をクリックした時それぞれに必要なので　その外で定義する
- ====================================================*/
-const resultDivided = document.getElementById('result-area');
-/**
- * 指定した要素の子要素を全て削除する
- * @param {HTMLElement} element HTMLの要素
- */
-function removeAllChildren(element) {
-  while (element.firstChild) {
-    // 子どもの要素があるかぎり削除
-    element.removeChild(element.firstChild);
-  }
-}
 
 /** ================================================
  * 献立テーブルの checkbox："この中には無い"　がクリックされた場合の処理
