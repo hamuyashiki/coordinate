@@ -32,6 +32,17 @@ body {
     left : 810pX;
     width:100px;
 }
+
+/* 管理者画面の設定が行われていない場合の警告表示の位置、色 */
+
+#initial-alert {
+  position : absolute;
+    top : 500px;
+    left : 350pX;
+    width:600px;
+    color:red;
+}
+
 /* ３つのボタン群のコメントの位置 */ 
 #button-intro {
   position : absolute;
@@ -120,6 +131,8 @@ body {
     top : 110px;
     left : 320px;
 }
+
+/* 結果表示 */
 #result-area {
     position : absolute;
     top : 420px;
@@ -128,7 +141,6 @@ body {
     margin:0px;
     color: hsl(20, 100%, 30%);     
 }
-
 
 /* アプリの説明文を右から左に動かす */
 .appsetsumei {
