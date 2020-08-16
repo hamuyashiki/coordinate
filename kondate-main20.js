@@ -13,7 +13,8 @@
  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
  /* ==================================================
-  調整結果表示エリアの場所を決める
+  管理者画面の設定が未実施である場合の警告の表示場所を決める
+  調整結果の表示場所を決める
   表示エリアの記載を一旦全て消去する関数を準備する  
   memo:"メニューを決める"ボタンと　"もう一度やるボタン"　をクリックした時それぞれに必要なので　その外で定義する
  ====================================================*/
@@ -40,14 +41,13 @@ var adminSetting = new Array(9);
 for (let i = 0; i < keyName.length; i++) {
   // 1) 管理者画面の各テーブルの配列を文字列化した値を key1～9 で読み出す
   let setteiYomidashi = localStorage.getItem(keyName[i]);
-  console.log(setteiYomidashi);
+  // 管理者画面の設定が未実施である場合に警告を表示する
   if(setteiYomidashi === null){
     removeAllChildren(initialAlert);
   const indicateAlert = document.createElement('h2');
   indicateAlert.innerText = '管理者画面を設定してから使用してください';
   initialAlert.appendChild(indicateAlert);
   }else{
-    console.log("設定済みだね");
     removeAllChildren(initialAlert);}
   // 2) ","を含んだ各文字列を配列に直す
   adminSetting[i] = setteiYomidashi.split(",");
