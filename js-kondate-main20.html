@@ -19,45 +19,45 @@
 
     </div>
     <h3 id="app-setsumei" class="appsetsumei">みんなの希望を調整して献立を決めるよ　買い物リストも出すよ</h3>
-
+    <!--冷蔵庫の在庫調査テーブル-->
     <p id="zaikoTableMessage">１．冷蔵庫の材料に印をつけてね</p>
     <table id="zairyou-table" class="zairyou" border='1'>
         <form name="reizouko">
             <tr class = 'yokojiku'>
-                <th>材料</th>
+                <th>　材料　</th>
                 <th>在庫あり</th>
             </tr>
 
             <tr>
                 <td name='zairyou-Name' class = 'tatejiku'>たまご</td>
-                <td><input type="checkbox" name="syokuzai" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="syokuzai" /></td>
             </tr>
             <tr>
                 <td name='zairyou-Name' class = 'tatejiku'>ひき肉</td>
-                <td><input type="checkbox" name="syokuzai" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="syokuzai" /></td>
             </tr>
             <tr>
                 <td name='zairyou-Name' class = 'tatejiku'>タマネギ</td>
-                <td><input type="checkbox" name="syokuzai" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="syokuzai" /></td>
             </tr>
             <tr>
                 <td name='zairyou-Name' class = 'tatejiku'>キャベツ</td>
-                <td><input type="checkbox" name="syokuzai" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="syokuzai" /></td>
             </tr>
             <tr>
                 <td name='zairyou-Name' class = 'tatejiku'>肉</td>
-                <td><input type="checkbox" name="syokuzai" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="syokuzai" /></td>
             </tr>
             <tr>
                 <td name='zairyou-Name' class = 'tatejiku'>魚</td>
-                <td><input type="checkbox" name="syokuzai" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="syokuzai" /></td>
             </tr>
         </form>
     </table>
 
 
     <p id="menuTableMessage">２．食べたいものを選んでね（複数選択可）</p>
-
+    <!--献立希望調査テーブル-->
     <table id="menu-table" class="menu" onchange=clearfunc() border='1'>
         <form name="menuRequest">
             <tr  class = 'yokojiku'>
@@ -70,63 +70,63 @@
             <tr>
 
                 <td name='menu-Name' class = 'tatejiku'>カレー</td>
-                <td><input type="checkbox" name="menu1" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu1" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu1" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu1" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="menu1" /></td>
+                <td><input type="checkbox" name="menu1" /></td>
+                <td><input type="checkbox" name="menu1" /></td>
+                <td><input type="checkbox" name="menu1" /></td>
 
             </tr>
             <tr>
                 <td name='menu-Name' class = 'tatejiku'>ハンバーグ</td>
 
-                <td><input type="checkbox" name="menu2" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu2" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu2" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu2" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="menu2" /></td>
+                <td><input type="checkbox" name="menu2" /></td>
+                <td><input type="checkbox" name="menu2" /></td>
+                <td><input type="checkbox" name="menu2" /></td>
             </tr>
             <tr>
                 <td name='menu-Name' class = 'tatejiku'>すき焼き</td>
 
-                <td><input type="checkbox" name="menu3" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu3" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu3" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu3" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="menu3" /></td>
+                <td><input type="checkbox" name="menu3" /></td>
+                <td><input type="checkbox" name="menu3" /></td>
+                <td><input type="checkbox" name="menu3" /></td>
 
             </tr>
             <tr>
                 <td name='menu-Name' class = 'tatejiku'>オムライス</td>
 
-                <td><input type="checkbox" name="menu4" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu4" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu4" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu4" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="menu4" /></td>
+                <td><input type="checkbox" name="menu4" /></td>
+                <td><input type="checkbox" name="menu4" /></td>
+                <td><input type="checkbox" name="menu4" /></td>
 
             </tr>
             <tr>
                 <td name='menu-Name' class = 'tatejiku'>お好み焼き</td>
 
-                <td><input type="checkbox" name="menu5" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu5" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu5" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu5" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="menu5" /></td>
+                <td><input type="checkbox" name="menu5" /></td>
+                <td><input type="checkbox" name="menu5" /></td>
+                <td><input type="checkbox" name="menu5" /></td>
 
             </tr>
             <tr>
                 <td name='menu-Name' class = 'tatejiku'>魚のフライ</td>
 
-                <td><input type="checkbox" name="menu6" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu6" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu6" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="menu6" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="menu6" /></td>
+                <td><input type="checkbox" name="menu6" /></td>
+                <td><input type="checkbox" name="menu6" /></td>
+                <td><input type="checkbox" name="menu6" /></td>
 
             </tr>
             <tr>
                 <td class = 'tatejiku'>この中にはない</td>
 
-                <td><input type="checkbox" name="sonota" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="sonota" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="sonota" size="40" maxlength="20" /></td>
-                <td><input type="checkbox" name="sonota" size="40" maxlength="20" /></td>
+                <td><input type="checkbox" name="sonota" /></td>
+                <td><input type="checkbox" name="sonota" /></td>
+                <td><input type="checkbox" name="sonota" /></td>
+                <td><input type="checkbox" name="sonota" /></td>
 
             </tr>
 
@@ -135,10 +135,10 @@
 
             <td class = 'tatejiku'>(食べたいもの)</td>
 
-            <td><input type="text" name="free-entry" size="10" maxlength="20" disabled="disabled" /></td>
-            <td><input type="text" name="free-entry" size="10" maxlength="20" disabled="disabled" /></td>
-            <td><input type="text" name="free-entry" size="10" maxlength="20" disabled="disabled" /></td>
-            <td><input type="text" name="free-entry" size="10" maxlength="20" disabled="disabled" /></td>
+            <td><input type="text" name="free-entry" size="20" maxlength="20" disabled="disabled" /></td>
+            <td><input type="text" name="free-entry" size="20" maxlength="20" disabled="disabled" /></td>
+            <td><input type="text" name="free-entry" size="20" maxlength="20" disabled="disabled" /></td>
+            <td><input type="text" name="free-entry" size="20" maxlength="20" disabled="disabled" /></td>
 
             </tr>
 
