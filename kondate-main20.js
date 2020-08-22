@@ -82,7 +82,7 @@ for (i = 0; i < kazokuNameOverWrite.length; i++) { kazokuNameOverWrite[i].innerT
  *    ・チェックを外された   ==> 自由記入欄を空欄にし入力できないようにする
  ===================================================*/
 
-// 家族の献立希望のcheckboxの状態を取得し各メニューの配列に格納する 
+// 家族の献立希望のcheckboxの状態を取得し献立ごとの配列に格納する 
 var orderMenu1 = document.getElementsByName("menu1");
 var orderMenu2 = document.getElementsByName("menu2");
 var orderMenu3 = document.getElementsByName("menu3");
@@ -235,14 +235,14 @@ arbitrationButton.onclick = () => {
   }
 
   /** -----------------------------------------------------------
-   * 2-1) 各メニューで　どの材料が不足しているかを　配列 fusoku* に入れる
+   * 2-1) 各献立で　どの材料が不足しているかを　配列 fusoku* に入れる
    *      memo: fusuku* は　不足している材料について　マイナス　の値を取る
    *            fusoku*　は　不要材料の在庫あり の場合をプラス側にカウントしないように
    *           （在庫-必要材料)*必要材料　で算出する
    *            その結果　fusoku* は必要材料なしの場合 在庫有無に関わらず　0 となる
    */
 
-  // メニュー1 ～　メニュー6 の各材料の不足状態の配列を作る
+  // 献立1 ～　献立6 の各材料の不足状態の配列を作る
   var fusoku1 = new Array(6);
   var fusoku2 = new Array(6);
   var fusoku3 = new Array(6);
@@ -426,8 +426,9 @@ arbitrationButton.onclick = () => {
 
   /**
     * 不足している材料を表示する関数
-    * @param {number} 各献立の不足材料数
-    * @param {string} 各献立の不足材料 材料の名前
+    * @param {number} sumFusoku 各献立の不足材料数
+    * @param {number} fusoku 各献立の各材料の不足状態
+    * @param {string} zairyouName 材料の名前
     * @return {string} 買い物リスト
     */
   function indicateFusokuSyokuzai(sumFusoku, fusoku, zairyouName) {
@@ -492,7 +493,7 @@ arbitrationButton.onclick = () => {
      * sumFusoku*は献立が選択されたか否かによらず　在庫と必要材料のみで算出しているため
      * 選択された献立よりも選択されていない献立のsumFusoku*が小さい可能性がある
      * そこで献立が選ばれたかを示す変数：dish*Select は初期値を-255,献立を選択された場合　0 とし
-     * 比較される献立のsumFusoku*に加えることで　献立が選択されていないメニューの不足材料が表示されるのを防ぐ
+     * 比較される献立のsumFusoku*に加えることで　選択されていない献立の不足材料が表示されるのを防ぐ
      */
     if (mostSelectedDishNum % 2 === 0 && (sumFusoku1 > sumFusoku2 + dish2Select) && (sumFusoku1 > sumFusoku3 + dish3Select)
       && (sumFusoku1 > sumFusoku4 + dish4Select) && (sumFusoku1 > sumFusoku5 + dish5Select)
@@ -544,7 +545,7 @@ arbitrationButton.onclick = () => {
   header.innerText = '今日のメニューは';
   resultDivided.appendChild(header);
 
-  // 結果　メニューの表示
+  // 結果　献立の表示
   const paragraph = document.createElement('p');
   paragraph.innerText = todayMenu;
   resultDivided.appendChild(paragraph);
