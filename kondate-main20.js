@@ -399,7 +399,7 @@ arbitrationButton.onclick = () => {
   if (spritDecision === 0) {
     for (j = 0; j < freeEntry.length; j++) {
       if (freeEntry[j].value !== "") {
-        freeEntryResult = freeEntryResult + "  " + kazokuName[j] + "は" + (freeEntry[j].value);
+        freeEntryResult = freeEntryResult + "  " + kazokuName[j] + "は「" + (freeEntry[j].value) + "」";
       } else { freeEntryResult = freeEntryResult + "  " }
     }
     todayMenu = '所定の献立は 人気がありません';
