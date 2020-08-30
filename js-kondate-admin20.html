@@ -12,7 +12,7 @@
             <h1 id="hyou-dai" class="hyoudai">管理者画面</h1>
             <a class="mainScreen" href="js-kondate-main20.html">献立調整アプリに戻る</a>
     </header>
-    <h3 id = "toriatsukai">１～７の手順に従って設定してください。初期設定ボタンを押すことで初期設定をテーブルに反映することができます。</h3>
+    <h3 id = "toriatsukai">１～７の手順に従って設定してください。「初期設定を使う」ボタンを押すことで初期設定をテーブルに反映することができます。</h3>
   <p id = "zairyou-comment">１．材料テーブル<br>　　冷蔵庫の材料リスト(6種類)を作成してください</p>
     <!--冷蔵庫の材料名登録テーブル-->
     <table id = "adminZairyou-table" class = "zairyou-list" border = '1'>
@@ -109,9 +109,9 @@
             <td><input type="text" name = "namae-settei" size="20" maxlength="10" /></td>
         </tr>
     </table>
-    
-    <p><input type="button" value= "PUSH" id = reflectSettings1 onclick="reflectOtherTable();"></p> 
-    <p id = buttonComment1>４．下の 「PUSH」 ボタン を押して１,２のテーブルのデータを「５．献立と必要な材料テーブル」 に反映してください</p>
+    <p id = "mojisuu">(テーブルは10文字以内で入力してください)</p>  
+    <p><input type="button" value= "材料と献立の決定" id = "reflectSettings1" onclick="reflectOtherTable();"></p> 
+    <p id = "buttonComment1">４．下の 「材料と献立の決定」 ボタン を押して１,２のテーブルのデータを「５．献立と必要な材料テーブル」 に反映してください</p>
     <p id = "menuTable-comment">５．献立と必要な材料テーブル<br>　　各献立について必要な材料にチェックを入れてください</p>
 
     <table id = "adminZairyo-menu" border="1" width="800">
@@ -197,8 +197,8 @@
     
     </table>
     
-    <p id = buttonComment2>６．「データをメイン画面に反映する」ボタンを押してください</p>
-    <p id = finalAction>7．最後に本画面右上のリンクからメイン画面に戻ってください</p>
+    <p id = "buttonComment2">６．「データをメイン画面に反映する」ボタンを押してください</p>
+    <p id = "finalAction">7．最後に本画面右上のリンクからメイン画面に戻ってください</p>
 
     <p><input type="button" value="データをメイン画面に反映" class="reflectMainScr" id = "reflectMain" onclick="adminSettingGet();"/></p>
     
