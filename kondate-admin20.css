@@ -2,6 +2,7 @@
 body {
   background:linear-gradient(to right, #fce7a1, #fab433);
   color:rgb(114, 19, 24);
+  margin: 0px;
   }
 
   header{
@@ -11,18 +12,22 @@ body {
 .headerInner{
   padding-left:320px;
 }
+/* ヘッダーの上の隙間を無くす*/
+#hyou-dai{
+  margin-top: 0px;
+}
 
 /* [ボタン] 初期設定使用ボタンの表示 */
 #useDefoult {
   position : absolute;
-    top : 35px;
+    top : 20px;
     left : 670px;    
 }
 /* [リンク] 献立調整画面に戻るリンクの表示 */
 .mainScreen {
   display: inline-block;
   position : absolute;
-    top : 35px;
+    top : 25px;
     left : 820pX;
     width:160px;
 }
@@ -69,6 +74,13 @@ body {
     left : 860px;
 }
 
+/* [説明] 文字数制限*/
+#mojisuu {
+  position : absolute;
+  top : 350px;
+  left : 850px;
+}
+
 /* [説明] 材料テーブル、献立テーブルへの反映ボタンの説明の表示位置 */
 #buttonComment1 {
   position : absolute;
@@ -82,9 +94,9 @@ body {
     top : 450px;
     left : 50px;
   width: 150px;
-  padding: 10px 40px;
+  padding: 10px 10px;
   background-color: rgb(255, 170, 90);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -105,24 +117,25 @@ body {
     left : 0px;
     font-size: 15px;
 }
-/* [テーブル] 材料-献立テーブルの表示位置 */
+/* [テーブル] 材料-献立テーブルの表示 */
 #adminZairyo-menu {
   position : absolute;
     top : 570px;
     left : 20px;
+    text-align: center;
 }
 
 /* [説明] メイン画面への反映ボタンの説明の表示位置 */
 #buttonComment2 {
   position : absolute;
-    top : 820px;
+    top : 830px;
     left : 0px;
     font-size: 15px;
 }
 /* [ボタン] メイン画面に反映するボタンの表示 */
 #reflectMain {
   position : absolute;
-    top : 865px;
+    top : 875px;
     left : 50px; 
   width: 200px;
   padding: 10px 10px;
@@ -131,12 +144,12 @@ body {
   font-weight: bold;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
-      border-radius: 7px;             
+  border-radius: 7px;             
 }
 /* 最後の説明 の表示 */
 #finalAction {
   position : absolute;
-    top : 905px;
-    left : 0px;
+    top : 830px;
+    left : 500px;
     font-size: 15px;
 }
