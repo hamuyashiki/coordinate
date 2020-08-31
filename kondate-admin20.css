@@ -33,8 +33,7 @@ header{
 }
 
 /* [タイトル] 材料テーブルのタイトルの表示位置 */
-#zairyou-comment
-{
+#zairyou-comment {
   position : absolute;
   top : 110px;
   left : 0px;
