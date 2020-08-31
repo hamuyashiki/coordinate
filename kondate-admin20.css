@@ -3,14 +3,14 @@ body {
   background:linear-gradient(to right, #fce7a1, #fab433);
   color:rgb(114, 19, 24);
   margin: 0px;
-  }
+}
 
-  header{
-    background: #eeeeee;
-    color:rgb(51, 26, 27);
+header{
+  background: #eeeeee;
+  color:rgb(51, 26, 27);
 }
 .headerInner{
-  padding-left:470px;
+  padding-left: 470px;
 }
 /* ヘッダーの上の隙間を無くす*/
 #hyou-dai{
@@ -20,58 +20,58 @@ body {
 /* [ボタン] 初期設定使用ボタンの表示 */
 #useDefoult {
   position : absolute;
-    top : 20px;
-    left : 700px;    
+  top : 20px;
+  left : 700px;    
 }
 /* [リンク] 献立調整画面に戻るリンクの表示 */
 .mainScreen {
-  display: inline-block;
+  display : inline-block;
   position : absolute;
-    top : 25px;
-    left : 870pX;
-    width:160px;
+  top : 25px;
+  left : 870pX;
+  width : 160px;
 }
 
 /* [タイトル] 材料テーブルのタイトルの表示位置 */
 #zairyou-comment
 {
   position : absolute;
-    top : 110px;
-    left : 0px;
-    font-size: 15px;
+  top : 110px;
+  left : 0px;
+  font-size : 15px;
 }
 /* [タイトル] 献立テーブルのタイトルの表示位置 */
 #menuList-comment {
   position : absolute;
-    top : 110px;
-    left : 440px;
-    font-size: 15px;
+  top : 110px;
+  left : 440px;
+  font-size : 15px;
 }
 /* [タイトル] 名前テーブルのタイトルの表示位置 */
 #nameTable-comment{
   position : absolute;
-    top : 110px;
-    left : 840px;
-    font-size: 15px;
+  top : 110px;
+  left : 840px;
+  font-size : 15px;
 }
 
 /* [テーブル] 材料テーブルの表示位置 */
 #adminZairyou-table {
   position : absolute;
-    top : 180px;
-    left : 20px;
+  top : 180px;
+  left : 20px;
 }
 /* [テーブル] 献立テーブルの表示位置 */
 .menu-list {
   position : absolute;
-    top : 180px;
-    left : 460px;
+  top : 180px;
+  left : 460px;
 }
 /* [テーブル] 名前テーブルの表示位置 */
 #namae {
   position : absolute;
-    top : 180px;
-    left : 860px;
+  top : 180px;
+  left : 860px;
 }
 
 /* [説明] 文字数制限*/
@@ -84,15 +84,15 @@ body {
 /* [説明] 材料テーブル、献立テーブルへの反映ボタンの説明の表示位置 */
 #buttonComment1 {
   position : absolute;
-    top : 400px;
-    left : 0px;
-    font-size: 15px;
+  top : 400px;
+  left : 0px;
+  font-size : 15px;
 }
 /* [ボタン] 材料テーブル、献立テーブルの設定を 材料-献立テーブルへ反映するボタンの形、色、位置 */ 
 #reflectSettings1 {
   position : absolute;
-    top : 450px;
-    left : 50px;
+  top : 450px;
+  left : 50px;
   width: 150px;
   padding: 10px 10px;
   background-color: rgb(255, 170, 90);
@@ -102,41 +102,41 @@ body {
   -webkit-border-radius: 7px;
       border-radius: 7px;  
 }
-  /* 全ての表の見た目 */
-  .yokojiku {
-    background-color: rgb(248, 246, 130);
-  }
-  .tatejiku {
-    background-color: rgb(248, 246, 130);
-  }
+/* 全ての表の見た目 */
+.yokojiku {
+  background-color: rgb(248, 246, 130);
+}
+.tatejiku {
+  background-color: rgb(248, 246, 130);
+}
 
 /* [タイトル] 材料-献立テーブルのタイトルの表示位置 */
 #menuTable-comment{
   position : absolute;
-    top : 500px;
-    left : 0px;
-    font-size: 15px;
+  top : 500px;
+  left : 0px;
+  font-size : 15px;
 }
 /* [テーブル] 材料-献立テーブルの表示 */
 #adminZairyo-menu {
   position : absolute;
-    top : 570px;
-    left : 20px;
-    text-align: center;
+  top : 570px;
+  left : 20px;
+  text-align: center;
 }
 
 /* [説明] メイン画面への反映ボタンの説明の表示位置 */
 #buttonComment2 {
   position : absolute;
-    top : 830px;
-    left : 0px;
-    font-size: 15px;
+  top : 830px;
+  left : 0px;
+  font-size : 15px;
 }
 /* [ボタン] メイン画面に反映するボタンの表示 */
 #reflectMain {
   position : absolute;
-    top : 875px;
-    left : 50px; 
+  top : 875px;
+  left : 50px; 
   width: 200px;
   padding: 10px 10px;
   background-color: rgb(255, 170, 90);
@@ -149,7 +149,7 @@ body {
 /* 最後の説明 の表示 */
 #finalAction {
   position : absolute;
-    top : 830px;
-    left : 500px;
-    font-size: 15px;
+  top : 830px;
+  left : 500px;
+  font-size : 15px;
 }
