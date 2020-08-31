@@ -21,134 +21,134 @@ header{
 .howto {
   display: inline-block;
   position : absolute;
-    top: 25px;
-    left: 780pX;
-    width: 100px;
+  top: 25px;
+  left: 780pX;
+  width: 100px;
 }
 
 /* 管理者設定画面に移動するリンクの位置 */
 .admin {
   display: inline-block;
   position: absolute;
-    top: 25px;
-    left: 870pX;
-    width: 100px;
+  top: 25px;
+  left: 870pX;
+  width: 100px;
 }
 
 /* 管理者画面の設定が行われていない場合の警告表示の位置、色 */
 #initial-alert {
   position: absolute;
-    top: 500px;
-    left: 350pX;
-    width: 600px;
-    color:red;
+  top: 500px;
+  left: 350pX;
+  width: 600px;
+  color:red;
 }
 
 /* ３つのボタン群のコメントの位置 */ 
 #button-intro {
   position: absolute;
-    top: 390px;
-    left: 10pX;
-  }
+  top: 390px;
+  left: 10pX;
+}
 
 /* ３つのボタン群の形、色、位置 */ 
 #arbitration {
-    width: 260px;
-    padding: 10px 40px;
-    background-color: rgb(255, 170, 90);
-    color: hsl(7, 97%, 49%);
-    border-style: none;
-    font-size: 1.4em;
-    font-weight: bold;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-        border-radius: 7px;
-    position: absolute;
-    top: 440px;
-    left: 20pX;
-  }
-  #retry {
-    width: 260px;
-    padding: 10px 40px;
-    background-color: rgb(214, 167, 123);
-    color: hsl(7, 97%, 49%);
-    border-style: none;
-    font-size: 1.4em;
-    font-weight: bold;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-        border-radius: 7px;
-    position: absolute;
-    top: 500px;
-    left: 20pX;
-  }
-  #resultprint {
-    width: 260px;
-    padding: 10px 40px;
-    background-color: rgb(197, 189, 181);
-    color: hsl(7, 97%, 49%);
-    border-style: none;
-    font-size: 1.4em;
-    font-weight: bold;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-        border-radius: 7px;
-    position: absolute;
-    top: 560px;
-    left: 20pX;
-  }
-
-    /* 表の見た目 */
-    .yokojiku {
-      background-color: rgb(248, 246, 130);
-    }
-    .tatejiku {
-      background-color: rgb(248, 246, 130);
-    }
-
-  /* 材料在庫テーブルの表示 */
-  .zairyou {
-    position: absolute;
-      top: 130px;
-      left: 10px;
-      text-align: center;
+  width: 260px;
+  padding: 10px 40px;
+  background-color: rgb(255, 170, 90);
+  color: hsl(7, 97%, 49%);
+  border-style: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+      border-radius: 7px;
+  position: absolute;
+  top: 440px;
+  left: 20pX;
+}
+#retry {
+  width: 260px;
+  padding: 10px 40px;
+  background-color: rgb(214, 167, 123);
+  color: hsl(7, 97%, 49%);
+  border-style: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+      border-radius: 7px;
+  position: absolute;
+  top: 500px;
+  left: 20pX;
+}
+#resultprint {
+  width: 260px;
+  padding: 10px 40px;
+  background-color: rgb(197, 189, 181);
+  color: hsl(7, 97%, 49%);
+  border-style: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+      border-radius: 7px;
+  position: absolute;
+  top: 560px;
+  left: 20pX;
 }
 
-  /* 献立選択テーブルの表示位置 */
-  .menu {
-    position: absolute;
-      top: 130px;
-      left: 320PX;
-      text-align: center;
+/* 表の見た目 */
+.yokojiku {
+  background-color: rgb(248, 246, 130);
+}
+.tatejiku {
+  background-color: rgb(248, 246, 130);
+}
+
+/* 材料在庫テーブルの表示 */
+.zairyou {
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  text-align: center;
+}
+
+/* 献立選択テーブルの表示位置 */
+.menu {
+  position: absolute;
+  top: 130px;
+  left: 320PX;
+  text-align: center;
 }
 
 /* 冷蔵庫の在庫テーブルのコメントの見た目 */
 #zaikoTableMessage {
   position: absolute;
-    top: 85px;
-    left: 10px;
+  top: 85px;
+  left: 10px;
 }
 /* 献立選択テーブルのコメントの見た目 */
 #menuTableMessage {
-    position: absolute;
-    top: 85px;
-    left: 320px;
+  position: absolute;
+  top: 85px;
+  left: 320px;
 }
 
 /* 結果表示 */
 #result-area {
-    position: absolute;
-    top: 420px;
-    left: 330PX;  
-    padding: 5px 10px;
-    margin:0px;
-    color: hsl(20, 100%, 30%);     
+  position: absolute;
+  top: 420px;
+  left: 330PX;  
+  padding: 5px 10px;
+  margin: 0px;
+  color: hsl(20, 100%, 30%);     
 }
 
 /* アプリの説明文を右から左に動かす */
 .appsetsumei {
   position: absolute;
-    top: 60px;
+  top: 60px;
   color:rgb(114, 19, 24);
   margin:0;
   padding-left:724px; 
@@ -158,8 +158,8 @@ header{
   animation-timing-function:linear;
   animation-duration:15s; 
   animation-iteration-count:infinite;
-  }
-  @keyframes righttoleft {
-    from   { transform: translate(0%);} 
-    to { transform: translate(-100%);}
-  }
+}
+@keyframes righttoleft {
+  from   { transform: translate(0%);} 
+  to { transform: translate(-100%);}
+}
