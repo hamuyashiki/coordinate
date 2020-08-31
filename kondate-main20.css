@@ -7,10 +7,10 @@ body {
 
 header{
   background: #eeeeee;
-  color:rgb(51, 26, 27); 
+  color:rgb(51, 26, 27);
 }
 .headerInner{
-  padding-left:320px;
+  padding-left:480px;
 }
 /* ヘッダーの上の隙間を無くす*/
 #hyou-dai{
@@ -22,7 +22,7 @@ header{
   display: inline-block;
   position : absolute;
     top: 25px;
-    left: 720pX;
+    left: 780pX;
     width: 100px;
 }
 
@@ -31,7 +31,7 @@ header{
   display: inline-block;
   position: absolute;
     top: 25px;
-    left: 810pX;
+    left: 870pX;
     width: 100px;
 }
 
