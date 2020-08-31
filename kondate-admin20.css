@@ -10,7 +10,7 @@ body {
     color:rgb(51, 26, 27);
 }
 .headerInner{
-  padding-left:320px;
+  padding-left:470px;
 }
 /* ヘッダーの上の隙間を無くす*/
 #hyou-dai{
@@ -21,14 +21,14 @@ body {
 #useDefoult {
   position : absolute;
     top : 20px;
-    left : 670px;    
+    left : 700px;    
 }
 /* [リンク] 献立調整画面に戻るリンクの表示 */
 .mainScreen {
   display: inline-block;
   position : absolute;
     top : 25px;
-    left : 820pX;
+    left : 870pX;
     width:160px;
 }
 
